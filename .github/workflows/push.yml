@@ -36,4 +36,4 @@ jobs:
       - name: Push to Replicate
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: cog push r8.im/csviverdeia/controlnet-seg-room --secret id=HF_TOKEN,env=HF_TOKEN
+        run: cog push --separate-weights r8.im/csviverdeia/controlnet-seg-room --secret id=HF_TOKEN,env=HF_TOKEN
